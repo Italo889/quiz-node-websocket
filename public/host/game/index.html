@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jogo - QuizGame</title>
+    <link rel="stylesheet" href="../../css/hostGameView.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <main class="container container animate__animated animate__backInLeft">
+
+        <h4 id="questionNum">Questão 1</h4>
+        <h4 id="playersAnswered">Jogadores que responderam / x</h4>
+        <h3 id="timerText">Tempo restante:<span id="num"> 20</span></h3>
+    
+    
+        <div class="square" id="square1">1</div>
+        <div class="square" id="square2">2</div>
+        <div class="square" id="square3">3</div>
+        <div class="square" id="square4">4</div>
+    
+        <h2 id="question">Questão</h2>
+        <section>
+            <div class="up">
+                <h3 id="answer1">1- Resposta</h3>
+                <h3 id="answer2">2- Resposta</h3>
+            </div>
+            <div class="down">
+                <h3 id="answer3">3- Resposta</h3>
+                <h3 id="answer4">4- Resposta</h3>
+            </div>
+        </section>
+    
+        <br>
+        <button onclick="nextQuestion()" id="nextQButton">Próxima questão</button>
+    
+        <h2 id="winnerTitle">Top 5 Jogadores</h4>
+            <h3 id="winner1">1 - </h3>
+            <h3 id="winner2">2 - </h3>
+            <h3 id="winner3">3 - </h3>
+            <h3 id="winner4">4 - </h3>
+            <h3 id="winner5">5 - </h3>
+    </main>
+
+        <script src="../../socket.io/socket.io.js"></script>
+        <script src="../../js/libs/jqueryLibrary.js"></script>
+        <script src="../../js/libs/deparam.js"></script>
+        <script src="../../js/hostGame.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+:root {
+    font-size: 62.5%;
+
+  --bg-color: #f3f5f9;
+  --border-radius: .4rem;
+  --dark-color: #3A3B3A;
+  --light-color: #fff;
+  --light-blue: #5e4fff;
+  --orange-color: #ff7100;
+
+  --title-color: #010101;
+  --title-font-size: 5rem;
+}
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-content: center;
+    background-color: var(--light-blue);
+    display: grid;
+
+}
+
+.container {
+    background-color: var(--bg-color);
+    margin: auto;
+    width: 80%;
+
+
+}
+
+.title{
+    color: var(--title-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--title-font-size);
+    text-align: center;
+    
+    margin: 2rem 0 6rem 0;
+    
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+
+input {
+    width: 45rem;
+    height: 3rem;
+    outline: none;
+}
+
+.form-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    font-family: 'Raleway', sans-serif;
+    height: 10rem;
+    padding: 1rem;
+}
+
+#quiz-title {
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#question-field{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+    padding: 2rem;
+}
+
+
+.question{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.answer {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.correct{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    width: 5rem;
+}
+
+button {
+    background-color: var(--orange-color);
+    border: none;
+    border-radius: .5rem;
+    color: var(--light-color);
+    font-weight: 700;
+    height: 4rem;
+    margin: 0 2rem;
+    text-transform: uppercase;
+    width: 17rem;
+}
+
+.buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    margin: 4rem 0;
+}
+
+.wave-top {
+    height: 50%;
+}
+
+.wave {
+    margin-bottom: -.2rem;
+}

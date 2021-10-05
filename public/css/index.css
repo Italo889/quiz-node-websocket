@@ -1,0 +1,102 @@
+:root {
+    font-size: 62.5%;
+
+  --bg-color: #f3f5f9;
+  --border-radius: .4rem;
+  --dark-color: #3A3B3A;
+  --light-color: #fff;
+  --light-blue: #5e4fff;
+  --orange-color: #ff7100;
+
+  --title-color: #010101;
+  --title-font-size: 5rem;
+}
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-content: center;
+    background-color: var(--light-blue);
+    display: grid;
+    height: 100vh;
+}
+
+.container {
+    align-content: center;
+    background-color: var(--bg-color);
+    display: grid;
+    height: 55rem;
+    margin: auto;
+    width: 80%;
+
+}
+
+
+#title{
+    color: var(--title-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--title-font-size);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+#name,
+#pin {
+    border: .1rem solid #ccc;
+    border-radius: var(--border-radius);
+    display: block;
+    font-size: 2rem;
+    margin: 1rem auto;
+    outline: none;
+    padding: 1.2rem 0;
+    text-align: center;
+    width: 50%;
+}
+
+#label{
+    color: var(--light-blue);
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.host{
+    color: var(--orange-color);
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+#host:hover{
+    text-decoration:underline;
+}
+#joinButton{
+    background-color: var(--orange-color);
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--light-color);
+    cursor: pointer;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    margin: .8rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.4rem 2rem;
+    transition: .2s all;
+    width: 50%;
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#joinButton:hover {
+    opacity: 90%;
+}
+
+.create-game {
+    display: flex;
+    justify-content: center;
+}

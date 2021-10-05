@@ -1,0 +1,177 @@
+:root {
+    font-size: 62.5%;
+
+  --bg-color: #f3f5f9;
+  --border-radius: .4rem;
+  --dark-color: #3A3B3A;
+  --light-color: #fff;
+  --light-blue: #5e4fff;
+  --orange-color: #ff7100;
+
+  --title-color: #010101;
+  --title-font-size: 5rem;
+}
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-content: center;
+    background-color: var(--light-blue);
+    display: grid;
+    height: 100vh;
+}
+
+.container {
+    align-content: center;
+    background-color: var(--bg-color);
+    display: grid;
+    height: 65rem;
+    margin: auto;
+    width: 80%;
+    padding: 2rem;
+
+}
+
+.up {
+    margin-bottom: 2rem;
+}
+
+#answer1{
+    background-color: #AAA;
+    margin: auto;
+    padding: 3rem 2rem;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#answer2{
+    background-color: #AAA;
+    margin: auto;
+    padding: 3rem 2rem;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#answer3{
+    background-color: #AAA;
+    margin: auto;
+    padding: 3rem 2rem;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#answer4{
+    background-color: #AAA;
+    margin: auto;
+    padding: 3rem 2rem;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+.square{
+    border: none;
+    padding: 1.5rem 3.2rem;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 1.6rem;
+    margin: .4rem .2rem;
+    width: 7rem;
+    height: 0;
+    font-size: 2rem;
+}
+
+#square1{
+    background-color: var(--light-blue);
+}
+
+#square2{
+    background-color: var(--light-blue);
+}
+
+#square3{
+    background-color: var(--light-blue);
+}
+
+#square4{
+    background-color: var(--light-blue);
+}
+
+#nextQButton{
+    display: none;
+}
+
+#question{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4rem;
+}
+
+#timerText{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.1rem;
+}
+
+#num{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 3.5rem;
+}
+
+#playersAnswered{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.8rem;
+}
+
+#questionNum{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 3.2rem;
+}
+
+#winner1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    display: none;
+}
+#winner2{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+    display: none;
+}
+#winner3{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    display: none;
+}
+#winner4{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: none;
+}
+#winner5{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: none;
+}
+#winnerTitle{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    color: var(--orange-color);
+    display: none;
+}
+
+section {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}

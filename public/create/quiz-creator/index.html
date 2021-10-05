@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Criador - QuizGame</title>
+    <link rel="stylesheet" href="../../css/quizCreator.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <main class="container animate__animated animate__backInLeft">
+
+        <h1 class="title">Criador de partida QuizGame</h1>
+
+        <div class="form-field">
+            <label id="quiz-title">Título do quiz</label>
+            <input id="name" type="text" name="name" autofocus />
+        </div>
+
+        <div id="allQuestions">
+            <div id="question-field">
+                
+                <label>Questão 1: </label>
+                <input class="question" id="q1" type="text" autofocus />
+                <div class="answers">
+
+
+                        <div class="answer">
+                            <label>Resposta 1: </label>
+                            <input id="1a1" type="text" autofocus />
+                        </div>
+        
+                        <div class="answer">
+                            <label>Resposta 2: </label>
+                            <input id="1a2" type="text" autofocus />
+                        </div>
+
+
+                        <div class="answer">
+                            <label>Resposta 3: </label>
+                            <input id="1a3" type="text" autofocus />
+                        </div>
+                        <div class="answer">
+                            <label>Resposta 4: </label>
+                            <input id="1a4" type="text" autofocus />
+                        </div>
+
+                </div>
+
+                <label>Resposta correta (1-4) :</label>
+                <input class="correct" id="correct1" type="number" autofocus />
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="addQuestion()">Nova questão</button>
+    
+            <div class="form-field_button">
+                <button onclick="updateDatabase()">Criar quiz</button>
+            </div>
+    
+            <button onclick='cancelQuiz()'>Cancelar</button>
+        </div>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5e4fff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </main>
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/quizCreator.js"></script>
+</body>
+
+</html>

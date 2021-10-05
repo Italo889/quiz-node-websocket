@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Entrar - QuizGame</title>
+    <link rel="stylesheet" href="../css/host.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Entre na partida usando o pin abaixo: </h1>
+    <h1 id="gamePinText"></h1>
+    <textarea class="txtarea" readonly id='players'></textarea>
+    <button id='start' onclick="startGame()">Iniciar jogo</button>
+    <button id="cancel" onclick="endGame()">Cancelar jogo</button>
+    <script src="../socket.io/socket.io.js"></script>
+    <script src="../js/libs/jqueryLibrary.js"></script>
+    <script src="../js/libs//deparam.js"></script>
+    <script src="../js/host.js"></script>
+</body>
+
+</html>

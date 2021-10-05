@@ -1,0 +1,107 @@
+:root {
+    font-size: 62.5%;
+
+  --bg-color: #f3f5f9;
+  --border-radius: .4rem;
+  --dark-color: #3A3B3A;
+  --light-color: #fff;
+  --light-blue: #5e4fff;
+  --orange-color: #ff7100;
+
+  --title-color: #010101;
+  --title-font-size: 5rem;
+}
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light-blue);
+    display: grid;
+    align-content: center;
+
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--bg-color);
+    height: 50rem;
+    margin: auto;
+    width: 80%;
+
+}
+
+.title{
+    color: var(--title-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--title-font-size);
+    text-align: center;
+
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 3rem;
+    color: var(--light-blue);
+}
+
+.link {
+    color: var(--orange-color);
+}
+
+.game-list{
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.back{
+    font-size: 2.2rem;
+    text-align: center;
+
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    display: grid;
+    align-content: center;
+
+}
+
+.gameButton{
+    font-size:80px;
+}
+
+.gameButton:hover{
+    cursor: pointer;
+}
+
+#game-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+#game-list button {
+    background-color: var(--orange-color);
+    border: none;
+    color: var(--light-color);
+    cursor: pointer;
+    font-weight: bold;
+    margin: .3rem;
+    padding: 2rem 4rem;
+    text-transform: uppercase;
+}
+
+#game-list button:hover {
+    opacity: 90%;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jogo - QuizGame</title>
+    <link rel="stylesheet" href="../../css/playerGameView.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="container animate__animated animate__backInLeft">
+    <div id="stats">
+        <h4 id="nameText">Nome: </h4>
+        <h4 id="scoreText">Pontos: </h4>
+        <h4 id="rankText"></h4>
+    </div>
+    <h2 id="message"></h2>
+    <button onclick="answerSubmitted(1)" id="answer1" class="button">1</button>
+    <button onclick="answerSubmitted(2)" id="answer2" class="button">2</button>
+    <br>
+    <button onclick="answerSubmitted(3)" id="answer3" class="button">3</button>
+    <button onclick="answerSubmitted(4)" id="answer4" class="button">4</button>
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/libs/jqueryLibrary.js"></script>
+    <script src="../../js/libs/deparam.js"></script>
+    <script src="../../js/playerGame.js"></script>
+</body>
+
+</html>

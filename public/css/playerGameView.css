@@ -1,0 +1,67 @@
+:root {
+    font-size: 62.5%;
+
+  --bg-color: #f3f5f9;
+  --border-radius: .4rem;
+  --dark-color: #3A3B3A;
+  --light-color: #fff;
+  --light-blue: #5e4fff;
+  --orange-color: #ff7100;
+
+  --title-color: #010101;
+  --title-font-size: 5rem;
+}
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+html, body { height: 90%; padding: 0; margin: 0; }
+button{
+    width: 50%; height: 50%; float: left;
+}
+
+
+.container {
+    align-content: center;
+    background-color: var(--bg-color);
+    display: grid;
+    height: 55rem;
+    margin: auto;
+    width: 80%;
+
+}
+
+#buttons{
+    text-align: center;
+}
+
+.button {
+    display: grid;
+    align-content: center;
+    font-size: 3.2rem;
+    color: var(--light-color);
+    background-color: var(--light-blue);
+    font-weight: bold;
+}
+#nameText{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#scoreText{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+#message{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+}

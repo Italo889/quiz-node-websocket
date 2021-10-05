@@ -1,0 +1,76 @@
+:root {
+    font-size: 62.5%;
+
+  --bg-color: #f3f5f9;
+  --border-radius: .4rem;
+  --dark-color: #3A3B3A;
+  --light-color: #fff;
+  --light-blue: #5e4fff;
+  --orange-color: #ff7100;
+
+  --title-color: #010101;
+  --title-font-size: 5rem;
+}
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-content: center;
+    background-color: var(--light-blue);
+    display: grid;
+}
+
+.container {
+    align-content: center;
+    display: grid;
+    height: 55rem;
+    margin: auto;
+    width: 80%;
+
+}
+
+
+.title, .subtitle{
+    text-align: center;
+    color: var(--light-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+.title {
+    font-size: 2.6rem;
+}
+
+.subtitle{
+    font-size: 2.2rem;
+    margin: 1rem 0 4rem 0;
+}
+
+.loader {
+    display: block;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: .8rem solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3A3B3A;
+    width: 4rem;
+    height: 4rem;
+    -webkit-animation: spin 1.5s linear infinite; /* Safari */
+    animation: spin 1.5s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
