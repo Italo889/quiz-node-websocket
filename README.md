@@ -36,3 +36,12 @@ cd [nome da pasta]
 npm i
 npm start
 ```
+
+## Imagens do jogo 
+
+![Screenshot](/images/image1.png)
+![Screenshot](/images/image2.png)
+![Screenshot](/images/image3.png)
+![Screenshot](/images/image4.png)
+![Screenshot](/images/image5.png)
+![Screenshot](/images/image6.png)
